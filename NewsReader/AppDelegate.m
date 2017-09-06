@@ -12,6 +12,11 @@
 
 @implementation AppDelegate
 
++ (AppDelegate *)appDeg
+{
+    return  (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

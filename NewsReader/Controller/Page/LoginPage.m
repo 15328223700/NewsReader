@@ -15,7 +15,7 @@
 
 -(IBAction)doLogin:(id)sender
 {
-    NSDictionary *opInfo = @{@"url": LoginURL , @"body":@""};
+    NSDictionary *opInfo = @{@"url": LoginURL , @"data":@""};
     _operation = [[FxLogin alloc] initWithDelegate:self opInfo:opInfo];
     
     [_operation executeOp];

@@ -66,6 +66,11 @@
 #define NavBarHeight7       64
 #define LocationDistance    100
 
+//广告常量
+#define AdvertKey           @"AdvertKey"
+#define AdvertCheckTime     60*60
+#define AdvertDelayTime     3
+
 
 // 提示信息
 #define LoginingTip         @"登录中..."

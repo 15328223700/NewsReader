@@ -19,5 +19,4 @@
     [_delegate opSuccess:advert];
 }
 
-
 @end

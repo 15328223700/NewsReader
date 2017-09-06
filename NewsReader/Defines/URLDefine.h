@@ -19,13 +19,13 @@
 #define BaseHost    @""
 #define BasePort    @""
 #else
-#define BaseHost    @"http://localhost"
-#define BasePort    @":80"
+#define BaseHost    @"http://192.168.42.1"
+#define BasePort    @":8080"
 #endif
 
 
 #define BaseServer  BaseHost BasePort
-#define BaseURLPath "/Json/"
+#define BaseURLPath "/"
 #define BaseURL     BaseServer BaseURLPath
 
 #define LoginURL    BaseURL "login.json"
