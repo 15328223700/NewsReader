@@ -78,3 +78,11 @@
 #define LoginCheckTip       @"用户名或密码不能为空"
 #define LoginTitle          @"登录网易新闻"
 #define WeatherSuffix       @"市市辖区"
+
+
+
+// 文件缓存路径
+#define RootPath            @"/Library/.NewsReader"
+#define CacheImagePath      @"CacheImages"
+#define NewsIconPrex        @"NewsIcon_%@"
+#define NewsDBFile          @"News.db"

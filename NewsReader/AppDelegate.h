@@ -14,5 +14,7 @@
 
 +(AppDelegate *)appDeg;
 
+- (void)showHomePage;
+
 @end
 

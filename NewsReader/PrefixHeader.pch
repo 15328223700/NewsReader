@@ -14,5 +14,7 @@
 #import "Defines.h"
 #import "URLDefine.h"
 #import "FxJsonUtility.h"
+#import "FxFileUtility.h"
+#import "FxGlobal.h"
 
 #endif

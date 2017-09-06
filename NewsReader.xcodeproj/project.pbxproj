@@ -52,6 +52,9 @@
 		37035CD91F5D773A00C0041A /* login_username_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37035CD21F5D773A00C0041A /* login_username_icon@2x.png */; };
 		37035CDE1F5ED8C200C0041A /* FxActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 37035CDD1F5ED8C200C0041A /* FxActivity.m */; };
 		37035CE11F5EDA8800C0041A /* FxActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 37035CE01F5EDA8800C0041A /* FxActivityIndicator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3719655A1F601FDE00C58DA7 /* FxGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 371965591F601FDE00C58DA7 /* FxGlobal.m */; };
+		3719655D1F60209300C58DA7 /* FxFileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719655C1F60209300C58DA7 /* FxFileUtility.m */; };
+		371965601F6025C800C58DA7 /* FxGetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719655F1F6025C800C58DA7 /* FxGetImage.m */; };
 		3748DF261F5FDE74006EBCA2 /* AdvertPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3748DF251F5FDE74006EBCA2 /* AdvertPage.m */; };
 		3748DF281F5FDE82006EBCA2 /* AdvertPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3748DF271F5FDE82006EBCA2 /* AdvertPage.xib */; };
 		3748DF2B1F5FE2B6006EBCA2 /* FxAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3748DF2A1F5FE2B6006EBCA2 /* FxAppSetting.m */; };
@@ -138,6 +141,12 @@
 		37035CDD1F5ED8C200C0041A /* FxActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxActivity.m; sourceTree = "<group>"; };
 		37035CDF1F5EDA8800C0041A /* FxActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxActivityIndicator.h; sourceTree = "<group>"; };
 		37035CE01F5EDA8800C0041A /* FxActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxActivityIndicator.m; sourceTree = "<group>"; };
+		371965581F601FDE00C58DA7 /* FxGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxGlobal.h; sourceTree = "<group>"; };
+		371965591F601FDE00C58DA7 /* FxGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxGlobal.m; sourceTree = "<group>"; };
+		3719655B1F60209300C58DA7 /* FxFileUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxFileUtility.h; sourceTree = "<group>"; };
+		3719655C1F60209300C58DA7 /* FxFileUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxFileUtility.m; sourceTree = "<group>"; };
+		3719655E1F6025C800C58DA7 /* FxGetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxGetImage.h; sourceTree = "<group>"; };
+		3719655F1F6025C800C58DA7 /* FxGetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FxGetImage.m; sourceTree = "<group>"; };
 		3748DF241F5FDE74006EBCA2 /* AdvertPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertPage.h; sourceTree = "<group>"; };
 		3748DF251F5FDE74006EBCA2 /* AdvertPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertPage.m; sourceTree = "<group>"; };
 		3748DF271F5FDE82006EBCA2 /* AdvertPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvertPage.xib; sourceTree = "<group>"; };
@@ -215,8 +224,10 @@
 		37035C1D1F5AD0CD00C0041A /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				371965581F601FDE00C58DA7 /* FxGlobal.h */,
+				371965591F601FDE00C58DA7 /* FxGlobal.m */,
 			);
-			name = Global;
+			path = Global;
 			sourceTree = "<group>";
 		};
 		37035C1E1F5AD0E400C0041A /* Controller */ = {
@@ -257,6 +268,8 @@
 				37035C901F5C130E00C0041A /* FxGetAdvert.m */,
 				37035CC31F5D720500C0041A /* FxLogin.h */,
 				37035CC41F5D720500C0041A /* FxLogin.m */,
+				3719655E1F6025C800C58DA7 /* FxGetImage.h */,
+				3719655F1F6025C800C58DA7 /* FxGetImage.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -279,6 +292,8 @@
 				3748DF2A1F5FE2B6006EBCA2 /* FxAppSetting.m */,
 				3748DF2C1F5FE34E006EBCA2 /* FxDate.h */,
 				3748DF2D1F5FE34E006EBCA2 /* FxDate.m */,
+				3719655B1F60209300C58DA7 /* FxFileUtility.h */,
+				3719655C1F60209300C58DA7 /* FxFileUtility.m */,
 			);
 			name = Utitllity;
 			path = Utility;
@@ -511,6 +526,7 @@
 				37035CDE1F5ED8C200C0041A /* FxActivity.m in Sources */,
 				37035CC21F5D714600C0041A /* UserInfo.m in Sources */,
 				37035C0D1F5ACFD800C0041A /* HomePage.m in Sources */,
+				371965601F6025C800C58DA7 /* FxGetImage.m in Sources */,
 				37035CB61F5D6FA100C0041A /* ReaderWidget.m in Sources */,
 				37035C381F5AE38800C0041A /* FxBasePage.m in Sources */,
 				37035CC81F5D75A300C0041A /* LoginPage.m in Sources */,
@@ -523,6 +539,8 @@
 				37035CBC1F5D6FFA00C0041A /* NewsCell.m in Sources */,
 				37035C8E1F5C0C0200C0041A /* FxOperation.m in Sources */,
 				3748DF261F5FDE74006EBCA2 /* AdvertPage.m in Sources */,
+				3719655D1F60209300C58DA7 /* FxFileUtility.m in Sources */,
+				3719655A1F601FDE00C58DA7 /* FxGlobal.m in Sources */,
 				37035C0A1F5ACFD800C0041A /* AppDelegate.m in Sources */,
 				37035C071F5ACFD800C0041A /* main.m in Sources */,
 				37035CAA1F5D6F0600C0041A /* FxBaseWidget.m in Sources */,

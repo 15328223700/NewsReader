@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginPage.h"
+#import "HomePage.h"
 
 
 @implementation AppDelegate
@@ -17,6 +18,14 @@
     return  (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
+- (void)showHomePage
+{
+    HomePage *page = [[HomePage alloc] init];
+    
+    self.window.rootViewController = page;
+    
+    [self.window makeKeyAndVisible];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
